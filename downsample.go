@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func NewPoints() Points {
+	return make(Points, 0)
+}
+
 func (ps Points) Downsample(newStep int) Points {
 	if len(ps) == 0 {
 		return []Point{}
